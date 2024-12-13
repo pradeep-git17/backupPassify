@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="application.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> PASSIFY </div>
+            <ul>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+                <button>Login</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form_container">
+        <h2>Fill Application</h2>
+        <form action="application.php" method="post">
+            <div class="form_group">
+                <i class='bx bxs-user-circle'></i>
+                <input type="text" name="name" placeholder="Enter Name" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-phone'></i>
+                <input type="tel" name="phone" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-envelope'></i>
+                <input type="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-message-rounded-minus'></i>
+                <input type="number" name="age" placeholder="Enter Age" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-user-detail'></i>
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-low-vision'></i>
+                <input type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bx-map-pin'></i>
+                <input type="text" name="source_add" placeholder="Enter Source Address" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-map-pin'></i>
+                <input type="text" name="destination_add" placeholder="Enter Destination Address" required>
+            </div>
+            <div class="form_group">
+                <i class='bx bxs-calendar'></i>
+                <input type="datetime-local" name="booking_date" placeholder="Enter Booking Date & Time" required>
+            </div>
+            
+            <span>Pass required for:</span>
+            <div class="radiogroup">
+                <label for="daily"><input type="radio" name="pass_type" id="daily" value="daily" required> Daily</label>
+                <label for="weekly"><input type="radio" name="pass_type" id="weekly" value="weekly" required> Weekly</label>
+                <label for="monthly"><input type="radio" name="pass_type" id="monthly" value="monthly" required> Monthly</label>
+            </div>
+            <div class="form_button">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

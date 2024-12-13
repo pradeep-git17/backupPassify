@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color:#000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.95);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    transition: background-color 0.15s ease;
+    border: 2px solid #856cae;
+    border-radius: 25px;
+    background-color: #e5d5ff;
+}
+
+.logo {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 7px;
+    background-color: #bba9d8;
+    border-radius: 7px;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    padding: 7px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+nav button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(232, 232, 232, 0.525);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    /* background-color:#f4f4f4 ; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #e3d7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container h2{
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
